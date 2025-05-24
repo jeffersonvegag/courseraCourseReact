@@ -1,12 +1,14 @@
 {
   "name": "courseracoursereact",
-  "homepage": "https://jeffersonvegag.github.io/courseraCourseReact",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "start": "serve -s dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -14,7 +16,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
-    "react-router-dom": "^7.6.0"
+    "react-router-dom": "^7.6.0",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
